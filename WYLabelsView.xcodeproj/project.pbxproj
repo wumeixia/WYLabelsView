@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88FBD8D01D2167C7007E52D5 /* UIColor+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBD8CB1D2167C7007E52D5 /* UIColor+extend.m */; };
+		88FBD8D11D2167C7007E52D5 /* WYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBD8CD1D2167C7007E52D5 /* WYLabel.m */; };
+		88FBD8D21D2167C7007E52D5 /* WYLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FBD8CF1D2167C7007E52D5 /* WYLabelView.m */; };
 		88FD7AFE1D21673B001BC7BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FD7AFD1D21673B001BC7BE /* main.m */; };
 		88FD7B011D21673B001BC7BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FD7B001D21673B001BC7BE /* AppDelegate.m */; };
 		88FD7B041D21673B001BC7BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FD7B031D21673B001BC7BE /* ViewController.m */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88FBD8CA1D2167C7007E52D5 /* UIColor+extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extend.h"; sourceTree = "<group>"; };
+		88FBD8CB1D2167C7007E52D5 /* UIColor+extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extend.m"; sourceTree = "<group>"; };
+		88FBD8CC1D2167C7007E52D5 /* WYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLabel.h; sourceTree = "<group>"; };
+		88FBD8CD1D2167C7007E52D5 /* WYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLabel.m; sourceTree = "<group>"; };
+		88FBD8CE1D2167C7007E52D5 /* WYLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLabelView.h; sourceTree = "<group>"; };
+		88FBD8CF1D2167C7007E52D5 /* WYLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLabelView.m; sourceTree = "<group>"; };
 		88FD7AF91D21673B001BC7BE /* WYLabelsView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYLabelsView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FD7AFD1D21673B001BC7BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88FD7AFF1D21673B001BC7BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88FBD8C91D2167C7007E52D5 /* WYLabels */ = {
+			isa = PBXGroup;
+			children = (
+				88FBD8CA1D2167C7007E52D5 /* UIColor+extend.h */,
+				88FBD8CB1D2167C7007E52D5 /* UIColor+extend.m */,
+				88FBD8CC1D2167C7007E52D5 /* WYLabel.h */,
+				88FBD8CD1D2167C7007E52D5 /* WYLabel.m */,
+				88FBD8CE1D2167C7007E52D5 /* WYLabelView.h */,
+				88FBD8CF1D2167C7007E52D5 /* WYLabelView.m */,
+			);
+			path = WYLabels;
+			sourceTree = "<group>";
+		};
 		88FD7AF01D21673B001BC7BE = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +123,7 @@
 		88FD7AFB1D21673B001BC7BE /* WYLabelsView */ = {
 			isa = PBXGroup;
 			children = (
+				88FBD8C91D2167C7007E52D5 /* WYLabels */,
 				88FD7AFF1D21673B001BC7BE /* AppDelegate.h */,
 				88FD7B001D21673B001BC7BE /* AppDelegate.m */,
 				88FD7B021D21673B001BC7BE /* ViewController.h */,
@@ -271,8 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				88FD7B041D21673B001BC7BE /* ViewController.m in Sources */,
+				88FBD8D21D2167C7007E52D5 /* WYLabelView.m in Sources */,
 				88FD7B011D21673B001BC7BE /* AppDelegate.m in Sources */,
 				88FD7AFE1D21673B001BC7BE /* main.m in Sources */,
+				88FBD8D01D2167C7007E52D5 /* UIColor+extend.m in Sources */,
+				88FBD8D11D2167C7007E52D5 /* WYLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +524,7 @@
 				88FD7B281D21673B001BC7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FD7B291D21673B001BC7BE /* Build configuration list for PBXNativeTarget "WYLabelsViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +533,7 @@
 				88FD7B2B1D21673B001BC7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FD7B2C1D21673B001BC7BE /* Build configuration list for PBXNativeTarget "WYLabelsViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +542,7 @@
 				88FD7B2E1D21673B001BC7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
