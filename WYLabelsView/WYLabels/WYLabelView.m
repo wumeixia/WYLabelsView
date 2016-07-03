@@ -46,8 +46,9 @@
     }
     
     CGFloat tagHeight = 0.0f;
-    for (NSString *tag in tags)
+    for (NSInteger i = self.row;i< tags.count+self.row;i++)
     {
+        NSString * tag = tags[i-self.row];
         WYLabel *fillLabel = [[WYLabel alloc] initWithFrame:CGRectMake(tagsTotalWidth, tagsTotalHeight, 0, 0)];
         fillLabel.text = tag;
         int x = arc4random() % (self.tagColors.count);

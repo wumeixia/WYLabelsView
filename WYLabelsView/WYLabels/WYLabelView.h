@@ -17,5 +17,6 @@
 @property (copy, nonatomic) NSString * name;
 
 @property (assign, nonatomic) CGFloat labViewH;
+@property (assign, nonatomic) NSInteger row;//传入不同的row，标签的第一个颜色值不同
 
 @end
